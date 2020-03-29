@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url(../images/bc.jpg);
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boy {
+  /* The image used */
+  background-image: url(../images/bc2.jpg);
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+/*# sourceMappingURL=App.css.map */

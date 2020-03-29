@@ -1,0 +1,209 @@
+@import "~bootstrap/scss/bootstrap";
+
+html {
+   scroll-behavior: smooth;
+}  
+
+body {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    // box-sizing: border-box;
+
+}
+$link-text : Poppins,Work Sans,system-ui,sans-serif;
+
+.parallax {
+  /* The image used */
+  background-color: #21A9F5;
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+
+  ///////
+  
+
+
+  /////
+  
+}
+
+.overlay {
+background: linear-gradient(30deg,#07aaf5 12%,transparent 12.5%,transparent 87%,#07aaf5 87.5%,#07aaf5 0),linear-gradient(150deg,#07aaf5 12%,transparent 12.5%,transparent 87%,#07aaf5 87.5%,#07aaf5 0),linear-gradient(30deg,#07aaf5 12%,transparent 12.5%,transparent 87%,#07aaf5 87.5%,#07aaf5 0),linear-gradient(150deg,#07aaf5 12%,transparent 12.5%,transparent 87%,#07aaf5 87.5%,#07aaf5 0),linear-gradient(60deg,#27b7f9 25%,transparent 25.5%,transparent 75%,#27b7f9 75%,#27b7f9 0),linear-gradient(60deg,#27b7f9 25%,transparent 25.5%,transparent 75%,#27b7f9 75%,#27b7f9 0),#0692d2;
+  background-position: 0 0,0 0,40px 70px,40px 70px,0 0,40px 70px;
+  background-size: 80px 140px;
+  height: 100px;
+  width: 100%;
+}
+
+.boy {
+  /* The image used */
+  background-color: #21A9F5;
+  /* Set a specific height */
+  min-height: 60vh;
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+$link-color: #2A2A57;
+$link-hover-white: white;
+
+
+ul li a {
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+
+  &:after{
+    display: block;
+    content: "";
+    border-bottom: solid 2px $link-hover-white;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+  }
+}
+li {
+  text-decoration: none;
+  list-style:none
+}
+//jumbotron 
+.jumbo {
+
+  &__profilepicture {
+    height: 145px;
+    width: 145px;
+    background-color: #2A2A57;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    
+  }
+  &__intro {
+      font-family: Poppins,Work Sans,system-ui,sans-serif;
+
+  }
+
+  &__header{
+
+    font-weight: bold;
+    
+    &--text {
+      font-family: Barlow Condensed,Pt Sans Narrow,Work Sans,system-ui,sans-serif;
+    }
+  }
+  
+}
+  
+.bb {
+  border-bottom: 2px solid #fff;
+}
+
+
+.logo {
+  margin: 0 auto;
+}
+
+.log-con {
+    height: 3rem;
+    width: 3rem;
+    background: #fff;
+    // display: flex;
+    border-radius: 50%;
+    position: relative;  
+    cursor: pointer;
+
+}
+
+.log-con:hover:nth-of-type(1){
+  background: #211F1F;
+}
+.log-con:hover:nth-of-type(2){
+  background: #1D9CEC;
+}
+.log-con:hover:nth-of-type(3){
+  background: #4064AD;
+}
+.log-con:hover:nth-of-type(4){
+  background: #0e76a8;
+}
+
+
+
+.log-con:hover:nth-of-type(1) .fa-github{
+  color: #fff;
+  
+}
+// -webkit-transform: rotate(360deg) scale(1.3);
+// 	-moz-transform:    rotate(360deg) scale(1.3);
+// 	-o-transform:      rotate(360deg) scale(1.3);
+// 	-ms-transform:     rotate(360deg) scale(1.3);
+
+
+.fa-github {
+    position: absolute;
+     top: 1rem;
+    left: 1.2rem;
+    color: #fff;
+
+}
+
+.log-con:hover:nth-of-type(2) .tw{
+  color: #fff;
+}
+
+.tw {
+    position: absolute;
+     top: 1rem;
+    left: 1.1rem;
+    color: #1D9CEC;
+}
+
+.log-con:hover:nth-of-type(3) .fb{
+  color: #fff;
+}
+
+.fb {
+    position: absolute;
+     top: 1rem;
+    left: 1.2rem; 
+    color: #4064AD;
+}
+
+.log-con:hover:nth-of-type(4) .in{
+  color: #fff;
+}
+
+.in {
+    position: absolute;
+    top: .95rem;
+    left: 1.1rem;
+    color: #0e76a8;
+
+}
+
+
+
+.fa-github {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #211F1F;
+
+}
+
+.bg-icon {
+  background: #fff;
+}
